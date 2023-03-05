@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                 <a href=""><i class='bx bxl-instagram-alt'></i></a>
                 <a href=""><i class='bx bxl-twitter'></i></a>
             </div>
-            <a href="" class="btn">Download Cv</a>
+            <a href="images/Mohd_Shahid_CV.pdf" download="MohdShahid'sCV" class="btn">Download Cv</a>
         </div>
         <div class="img">
             <img src="stark.jpg" alt="">
@@ -157,15 +157,15 @@
         <h2 class="heading">Contact <span>Me!!</span></h2>
         <form action="#">
             <div class="input-boxes">
-                <input type="text" name="fname" id="" placeholder="Full Name">
-                <input type="email" name="email" id="" placeholder="Email Address">
+                <input type="text" name="fname" id="" placeholder="Full Name" required>
+                <input type="email" name="email" id="" placeholder="Email Address" required>
             </div>
             <div class="input-boxes">
-                <input type="number" name="num" id="" placeholder="Mobile Number">
-                <input type="text" name="sub" id="" placeholder="Subject">
+                <input type="tel" name="num" id="" placeholder="Mobile Number" required onkeypress="return onlyNumber(event)">
+                <input type="text" name="sub" id="" placeholder="Subject" required>
             </div>
-            <textarea name="msg" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Meassage" class="btn" name="submit">
+            <textarea name="msg" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Meassage" class="btn" name="submit" >
         </form>
     </section>
 

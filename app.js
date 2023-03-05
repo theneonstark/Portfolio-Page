@@ -1,5 +1,3 @@
-// debugger;
-
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -17,7 +15,7 @@ window.onscroll = () =>{
         let top = window.scrollY;
         let offset = sec.offsetTop-150;
         let height = sec.offsetHeight;
-        console.log(top);
+        // console.log(top);
         let id = sec.getAttribute('id');
 
         if(top>= offset && top < offset+height){
@@ -34,4 +32,12 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 
 };
+
+onlyNumber = (Stark) => {
+    let AssCode = (Stark.which) ? Stark.which : Stark.keyCode;
+    if (AssCode > 31 && (AssCode < 48 || AssCode > 57))
+        return false;
+    return true;
+}
+
 
