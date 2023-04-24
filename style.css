@@ -69,6 +69,11 @@ section {
     cursor: pointer;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
 .navbar a {
     font-size: 1.5em;
     margin-left: 4rem;
@@ -79,6 +84,23 @@ section {
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
+}
+
+#night{
+    font-size: 3.5rem;
+    color: var(--text-color);
+    display: none;
+}
+
+#lg-night{
+    font-size: 3.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+}
+
+.dark{
+    background: #fff;
+    color: aqua;
 }
 
 #menu-icon {
@@ -412,6 +434,10 @@ input[type=number]::-webkit-inner-spin-button{
 
 @media (max-width: 768px) {
     #menu-icon {
+        display: block;
+    }
+
+    #night{
         display: block;
     }
 

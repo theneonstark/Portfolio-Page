@@ -41,3 +41,9 @@ onlyNumber = (Stark) => {
 }
 
 
+let lgnight = document.querySelector('#lg-night');
+let body = document.querySelector('body');
+lgnight.onclick = () =>{
+    lgnight.classList.toggle('bx-flip-horizontal');
+    body.classList.toggle('dark');
+}
