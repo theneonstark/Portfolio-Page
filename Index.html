@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="" class="logo">StarK</a>
         <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="" class="logo">StarK</a>
         <i class='bx bx-toggle-left' id="night"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -25,7 +26,7 @@
         </nav>
     </header>
     <section class="home" id="home">
-        <div class="home-content">
+        <div class="home-content" data-aos="fade-down">
             <h3>Hello, I'm</h3>
             <h1>Mohd Shahid</h1>
             <h3>and I'm a <span>Teacher</span></h3>
@@ -39,60 +40,60 @@
             </div>
             <a href="images/Mohd_Shahid_CV.pdf" download="MohdShahid'sCV" class="btn">Download Cv</a>
         </div>
-        <div class="img">
+        <div class="img" data-aos="fade-up">
             <img src="stark.jpg" alt="">
         </div>
     </section>
     <section class="about" id="about">
-        <div class="about-images">
+        <div class="about-images" data-aos="fade-right">
             <img src="stark.jpg" alt="">
         </div>
         <div class="aboutcontent">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Teacher</h3>
+            <h2 class="heading" data-aos="fade-down">About <span>Me</span></h2>
+            <h3 data-aos="fade-down">Teacher</h3>
             <i class="fa-regular fa-book"></i>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse, dolor perspiciatis nulla nam
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum esse, dolor perspiciatis nulla nam
                 necessitatibus quae id repudiandae ut iusto repellat quasi sed, maiores, temporibus dolorem? Molestias
                 sint quidem sapiente.</p>
-            <a href="" class="btn">Read More</a>
+            <a href="" class="btn" data-aos="fade-up">Read More</a>
         </div>
     </section>
     <section class="service" id="service">
-        <h2 class="heading">Our <span>Service</span></h2>
+        <h2 class="heading" data-aos="zoom-in-up">Our <span>Service</span></h2>
         <div class="service-contain">
-            <div class="service-box">
+            <div class="service-box" data-aos="zoom-in-right">
                 <i class='bx bx-edit-alt'></i>
                 <h3>Article Writing</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, aliquam odit. Quo, tempora illo nihil ea quasi iste suscipit eum qui, aut iusto fugiat incidunt amet. Error, nesciunt provident! Enim!</p>
                 <a href="" class="btn">Read More</a>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="zoom-in-down">
             <i class='bx bx-book'></i>
                 <h3>SME-Mathematics</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, aliquam odit. Quo, tempora illo nihil ea quasi iste suscipit eum qui, aut iusto fugiat incidunt amet. Error, nesciunt provident! Enim!</p>
                 <a href="" class="btn">Read More</a>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="zoom-in-left">
             <i class='bx bx-pen'></i>
                 <h3>Graphic Designer</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, aliquam odit. Quo, tempora illo nihil ea quasi iste suscipit eum qui, aut iusto fugiat incidunt amet. Error, nesciunt provident! Enim!</p>
                 <a href="" class="btn">Read More</a>
             </div>
         </div>
-        <div class="service-contain">
+        <div class="service-contain" data-aos="zoom-in-right">
             <div class="service-box">
-            <i class='bx bxl-graphql' ></i>
+            <i class='bx bxl-graphql'></i>
                 <h3>L   ogo Design</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, aliquam odit. Quo, tempora illo nihil ea quasi iste suscipit eum qui, aut iusto fugiat incidunt amet. Error, nesciunt provident! Enim!</p>
                 <a href="" class="btn">Read More</a>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="zoom-in-up">
             <i class='bx bxl-php'></i>
                 <h3>PHP Developer</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, aliquam odit. Quo, tempora illo nihil ea quasi iste suscipit eum qui, aut iusto fugiat incidunt amet. Error, nesciunt provident! Enim!</p>
                 <a href="" class="btn">Read More</a>
             </div>
-            <div class="service-box">
+            <div class="service-box" data-aos="zoom-in-left">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Developer</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, aliquam odit. Quo, tempora illo nihil ea quasi iste suscipit eum qui, aut iusto fugiat incidunt amet. Error, nesciunt provident! Enim!</p>
@@ -101,9 +102,9 @@
         </div>
     </section>
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+        <h2 class="heading" data-aos="zoom-in-up">Latest <span>Project</span></h2>
         <div class="portfolio-part">
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-right">
                 <img src="images/article.jpg" alt="">
                 <div class="portfolio-layout">
                     <h4>Web Design</h4>
@@ -111,7 +112,7 @@
                     <a href="#"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-up">
                 <img src="images/maths.jpg" alt="">
                 <div class="portfolio-layout">
                     <h4>Web Design</h4>
@@ -119,7 +120,7 @@
                     <a href="#"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-left">
                 <img src="images/Graphic.jpg" alt="">
                 <div class="portfolio-layout">
                     <h4>Web Design</h4>
@@ -127,7 +128,7 @@
                     <a href="#"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-right">
                 <img src="images/Logo.jpg" alt="">
                 <div class="portfolio-layout">
                     <h4>Web Design</h4>
@@ -135,7 +136,7 @@
                     <a href="#"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-up">
                 <img src="images/php.jpg" alt="">
                 <div class="portfolio-layout">
                     <h4>Web Design</h4>
@@ -143,7 +144,7 @@
                     <a href="#"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
-            <div class="portfolio-box">
+            <div class="portfolio-box" data-aos="zoom-in-left">
                 <img src="images/web.jpg" alt="">
                 <div class="portfolio-layout">
                     <h4>Web Design</h4>
@@ -156,7 +157,7 @@
 
     <section class="contact" id="contact">
   
-        <h2 class="heading">Contact <span>Me!!</span></h2>
+        <h2 class="heading" data-aos="">Contact <span>Me!!</span></h2>
         <form action="#">
             <div class="input-boxes">
                 <input type="text" name="fname" id="" placeholder="Full Name" required>
@@ -179,7 +180,11 @@
             <a href="#home" id="home"><i class='bx bx-chevrons-up' ></i></a>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="app.js"></script>
 </body>
 

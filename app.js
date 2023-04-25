@@ -42,8 +42,14 @@ onlyNumber = (Stark) => {
 
 
 let lgnight = document.querySelector('#lg-night');
-let body = document.querySelector('body');
+let Dark = document.querySelectorAll('link');
+console.log(Dark[2]);
+let a=0;
 lgnight.onclick = () =>{
-    lgnight.classList.toggle('bx-flip-horizontal');
-    body.classList.toggle('dark');
+    lgnight.classList.toggle('bx-flip-horizontal');    
+    Dark[2].href = (a==0 ? `dark.css` : `style.css`);
+    a++;
+    if(a>1){
+        a=0;
+    }
 }

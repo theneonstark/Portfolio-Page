@@ -10,10 +10,10 @@
 }
 
 :root {
-    --bg-color: #1a1a1a !important;
-    --second-bg-color: #606060 !important;
+    --bg-color: #0f0c29 !important;
+    --second-bg-color: #302b63 !important;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #6e64e4;
 }
 
 html {
@@ -98,10 +98,6 @@ section {
     margin-left: 4rem;
 }
 
-.dark{
-    background: #fff;
-    color: aqua;
-}
 
 #menu-icon {
     font-size: 3.5rem;
@@ -343,9 +339,9 @@ span {
     margin-bottom: 3rem;
 }
 
-input[type=number]::-webkit-inner-spin-button{
+/* input[type=number]::-webkit-inner-spin-button{
     -webkit-appearance: none;
-}
+} */
 
 .contact form .input-boxes{
     display: flex;
