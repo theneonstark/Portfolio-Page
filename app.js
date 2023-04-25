@@ -42,6 +42,7 @@ onlyNumber = (Stark) => {
 
 
 let lgnight = document.querySelector('#lg-night');
+let night = document.querySelector('#night');
 let Dark = document.querySelectorAll('link');
 console.log(Dark[2]);
 let a=0;
@@ -53,3 +54,41 @@ lgnight.onclick = () =>{
         a=0;
     }
 }
+
+night.onclick = () =>{
+    night.classList.toggle('bx-flip-horizontal');
+    Dark[2].href = (a==0 ? `dark.css` : `style.css`);
+    a++;
+    if(a>1){
+        a=0;
+    }
+}
+
+
+var Change = document.getElementById('changeText');
+
+var typewriter = new Typewriter(Change, {
+    loop: true,
+    delay: 75,
+})
+
+typewriter
+  .pauseFor(1500)
+  .typeString('Graphic Designer')
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString('Web Designer')
+  .pauseFor(1000)
+  .deleteChars(8)
+  .typeString('Developer')
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString('SME-Maths')
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString('Content Writer')
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString('Teacher')
+  .pauseFor(1000)
+  .start();

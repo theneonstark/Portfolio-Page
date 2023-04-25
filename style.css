@@ -437,6 +437,10 @@ span {
         display: block;
     }
 
+    #lg-night{
+        display: none;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
