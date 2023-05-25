@@ -165,7 +165,7 @@
     <section class="contact" id="contact">
   
         <h2 class="heading" data-aos="">Contact <span>Me!!</span></h2>
-        <form action="#">
+        <form action="#" method="POST">
             <div class="input-boxes">
                 <input type="text" name="fname" id="" placeholder="Full Name" required>
                 <input type="email" name="email" id="" placeholder="Email Address" required>
@@ -193,6 +193,27 @@
       </script>
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="app.js"></script>
+    <?php
+        $connet = mysqli_connect("localhost","root","","portfolio_data");
+        if($connet==false){
+            die("Couldn't connect".mysqli_connect_error());
+        }
+        if(isset($_POST["submit"])){
+            $name = $_POST["fname"];
+            $email = $_POST["email"];
+            $num = $_POST["num"];
+            $subject = $_POST["sub"];
+            $message = $_POST["msg"];
+
+            $query = mysqli_query($connet, "Insert into contacts (Name, Email, Number, Subject, Message) values ('$name','$email','$num','$subject','$message')");
+
+            if($query){
+                echo "<script>alert('Sucess')</script>";
+            }else{
+                echo "<script>alert('Error')</script>";
+            }
+        }
+    ?>
 </body>
 
 </html>
