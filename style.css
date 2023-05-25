@@ -124,6 +124,8 @@ section {
 
 .img img {
     width: 35vw;
+    filter: drop-shadow(0 1.25rem 5rem var(--main-color));
+    animation: float 4.25s linear infinite;
 }
 
 .home-content p {
@@ -186,6 +188,23 @@ span {
 
 .about-images {
     width: 35vw;
+    filter: drop-shadow(0 1.25rem 5rem var(--main-color));
+    animation: float 4.25s linear infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(1rem);
+    }
+    50%{
+        transform: translateX(-1rem);
+    }
+    75%{
+        transform: translateX(1rem);
+    }
+    100%{
+        transform: translateY(1rem);
+    }
 }
 
 .heading {
@@ -260,7 +279,7 @@ span {
 
 .portfolio-part{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 33.3rem);
     align-items: center;
     gap: 2.5rem;
 }
