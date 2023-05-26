@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    $connet = mysqli_connect("localhost","root","","portfolio_data");
+        if($connet==false){
+            die("Couldn't connect".mysqli_connect_error());
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -177,6 +184,22 @@
             <textarea name="msg" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Meassage" class="btn" name="submit" >
         </form>
+        <div class="feedback">
+        <?php
+                        $feed_head = mysqli_query($connet, "SELECT * FROM contacts");
+                        while($r = mysqli_fetch_array($feed_head)){
+
+        ?>
+            <div class="feed">
+                <h4>
+                    <?php echo $r['Name'] ?>
+                </h4>
+                <p> <?php echo $r['Message'] ?></p>
+            </div>
+        <?php
+            }
+        ?>
+        </div>
     </section>
 
     <footer class="footer">
@@ -194,10 +217,6 @@
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="app.js"></script>
     <?php
-        $connet = mysqli_connect("localhost","root","","portfolio_data");
-        if($connet==false){
-            die("Couldn't connect".mysqli_connect_error());
-        }
         if(isset($_POST["submit"])){
             $name = $_POST["fname"];
             $email = $_POST["email"];
