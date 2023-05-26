@@ -351,7 +351,7 @@ span {
     margin-bottom: 3rem;
 }
 
-.contact div{
+.contact form{
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -362,15 +362,15 @@ span {
     -webkit-appearance: none;
 } */
 
-.contact div .input-boxes{
+.contact form .input-boxes{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
 }
 
-.contact div .input-boxes input,
-.contact div textarea{
+.contact form .input-boxes input,
+.contact form textarea{
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -380,15 +380,15 @@ span {
     margin: .7rem auto;
 }
 
-.contact div .input-boxes input {
+.contact form .input-boxes input {
     width: 49%;
 }
 
-.contact div textarea {
+.contact form textarea {
     resize: none;
 }
 
-.contact div .btn{
+.contact form .btn{
     margin-top: 2rem;
     cursor: pointer;
 }
