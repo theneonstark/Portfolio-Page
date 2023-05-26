@@ -92,9 +92,3 @@ typewriter
   .typeString('Teacher')
   .pauseFor(1000)
   .start();
-
-  $(document).ready(
-    function(){
-        
-    }
-  )
