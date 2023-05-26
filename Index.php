@@ -16,6 +16,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -172,18 +173,18 @@
     <section class="contact" id="contact">
   
         <h2 class="heading" data-aos="">Contact <span>Me!!</span></h2>
-        <form action="#" method="POST">
+        <div action="#" method="POST">
             <div class="input-boxes">
-                <input type="text" name="fname" id="" placeholder="Full Name" required>
-                <input type="email" name="email" id="" placeholder="Email Address" required>
+                <input type="text" name="fname" id="fname" placeholder="Full Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
             </div>
             <div class="input-boxes">
-                <input type="tel" name="num" id="" placeholder="Mobile Number" required onkeypress="return onlyNumber(event)">
-                <input type="text" name="sub" id="" placeholder="Subject" required>
+                <input type="tel" name="num" id="tel" placeholder="Mobile Number" required onkeypress="return onlyNumber(event)">
+                <input type="text" name="sub" id="Sub" placeholder="Subject" required>
             </div>
-            <textarea name="msg" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Meassage" class="btn" name="submit" >
-        </form>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Meassage" class="btn" name="submit" id="sbtn">
+        </div>
         <div class="feedback">
         <?php
                         $feed_head = mysqli_query($connet, "SELECT * FROM contacts");
@@ -218,19 +219,7 @@
     <script src="app.js"></script>
     <?php
         if(isset($_POST["submit"])){
-            $name = $_POST["fname"];
-            $email = $_POST["email"];
-            $num = $_POST["num"];
-            $subject = $_POST["sub"];
-            $message = $_POST["msg"];
-
-            $query = mysqli_query($connet, "Insert into contacts (Name, Email, Number, Subject, Message) values ('$name','$email','$num','$subject','$message')");
-
-            if($query){
-                echo "<script>alert('Sucess')</script>";
-            }else{
-                echo "<script>alert('Error')</script>";
-            }
+            
         }
     ?>
 </body>
