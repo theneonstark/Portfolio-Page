@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $connet = mysqli_connect("sql307.epizy.com","epiz_34297839","7a50E1GNHqOWYr","epiz_34297839_portfolio_data");
+    $connet = mysqli_connect("localhost","root","","portfolio_data");
         if($connet==false){
             die("Couldn't connect".mysqli_connect_error());
     }
@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
