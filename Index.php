@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $connet = mysqli_connect("localhost","root","","portfolio_data");
+    $connet = mysqli_connect("sql307.epizy.com","epiz_34297839","7a50E1GNHqOWYr","epiz_34297839_portfolio_data");
         if($connet==false){
             die("Couldn't connect".mysqli_connect_error());
     }
