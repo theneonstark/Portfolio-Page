@@ -57,7 +57,7 @@ lgnight.onclick = () =>{
 
 night.onclick = () =>{
     night.classList.toggle('bx-flip-horizontal');
-    Dark[2].href = (a==0 ? `dark.css` : `style.css`);
+    Dark[2].href = (a==0 ? `css/dark.css` : `css/style.css`);
     a++;
     if(a>1){
         a=0;

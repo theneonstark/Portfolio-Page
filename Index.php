@@ -15,7 +15,7 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </head>
 
@@ -216,7 +216,7 @@
         AOS.init();
       </script>
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
     <?php
         if(isset($_POST["submit"])){
         $name = $_POST["fname"];
