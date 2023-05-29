@@ -182,8 +182,8 @@
                 <input type="tel" name="num" id="tel" placeholder="Mobile Number" required onkeypress="return onlyNumber(event)">
                 <input type="text" name="sub" id="Sub" placeholder="Subject" required>
             </div>
-            <textarea name="msg" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Meassage" class="btn" name="submit">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Meassage" class="btn" name="submit" id="submit">
         </form>
         <div class="feedback">
         <?php
@@ -217,23 +217,7 @@
       </script>
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="js/app.js"></script>
-    <?php
-        if(isset($_POST["submit"])){
-        $name = $_POST["fname"];
-        $email = $_POST["email"];
-        $num = $_POST["num"];
-        $subject = $_POST["sub"];
-        $message = $_POST["msg"];
 
-        $query = mysqli_query($connet, "Insert into contacts (Name, Email, Number, Subject, Message) values ('$name','$email','$num','$subject','$message')");
-
-        if ($query) {
-            echo "<script>alert('Sucess')</script>";
-        } else {
-            echo "<script>alert('Error')</script>";
-        }
-        }
-    ?>
 </body>
 
 </html>

@@ -92,3 +92,16 @@ typewriter
   .typeString('Teacher')
   .pauseFor(1000)
   .start();
+
+
+
+$(document).ready(function(){
+    $("#submit").click(function(){
+        var uname=$("fname").val();
+        var uemail=$("email").val();
+        var utel=$("tel").val();
+        var usub=$("sub").val();
+        var umsg=$("msg").val();
+        $.post("send.php",{fname:uname,email:uemail,num:utel,sub:usub,msg:umsg});
+    })
+})
